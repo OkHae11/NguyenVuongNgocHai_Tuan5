@@ -32,10 +32,10 @@ public class ChuyenBayController {
 	public List<ChuyenBay> findChuyenBaysfromSGNtoBMV(){
 		return chuyenBayRepository.findChuyenBaysfromSGNtoBMV();
 	}
-//	@GetMapping("/CountChuyenBaysfromSG")
-//	public List<ChuyenBay> CountChuyenBaysfromSG(){
-//		int chuyenBays=chuyenBayRepository.CountChuyenBaysfromSG()
-//		return ;
-//	}
+	@GetMapping("/CountChuyenBaysfromSG")
+	public int countChuyenBaysfromSG(){
+		
+		return chuyenBayRepository.CountChuyenBaysfromSG();
+	}
 	
 }
