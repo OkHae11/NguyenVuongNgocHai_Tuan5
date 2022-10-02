@@ -18,4 +18,19 @@ public class NhanVienController {
 	public List<NhanVien> findnhanvienluongnhohon10000(){
 		return nhanVienRepository.findNVLuongNH10000();
 	}
+	
+	@GetMapping("/TongLuongNVPhaiTra")
+	public int TongLuongNVPhaiTra(){
+		return nhanVienRepository.TongLuongNVPhaiTra();
+	}
+	
+	@GetMapping("/findNVLaiBoeing")
+	public List<String> findNVLaiBoeing(){
+		return nhanVienRepository.findNVLaiBoeing();
+	}
+	@GetMapping("/findNVByMaMB")
+	public List<NhanVien> findNVByMaMB(){
+		return nhanVienRepository.findNVByMaMB();
+	}
+	
 }

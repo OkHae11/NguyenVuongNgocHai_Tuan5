@@ -19,4 +19,9 @@ public class MayBayController {
 	public List<MayBay> finmaybaytamlon10000(){
 		return mayBayRepository.findMayBayTamBayHon10000();
 	}
+	
+	@GetMapping("/SoMayBayBoeing")
+	public int findSoMayBayBoeing(){
+		return mayBayRepository.findSoMayBayBoeing();
+	}
 }
